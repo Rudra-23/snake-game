@@ -53,16 +53,16 @@ def gameloop():
                     game_exit=True
             
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_s:
+                    if event.key == pygame.K_s or event.key ==pygame.K_DOWN:
                         velocity_y=10
                         velocity_x=0
-                    if event.key == pygame.K_w:
+                    if event.key == pygame.K_w or event.key ==pygame.K_UP:
                         velocity_y=-10
                         velocity_x=0
-                    if event.key == pygame.K_d:
+                    if event.key == pygame.K_d or event.key ==pygame.K_RIGHT:
                         velocity_y=0
                         velocity_x=10
-                    if event.key == pygame.K_a:
+                    if event.key == pygame.K_a or event.key ==pygame.K_LEFT:
                         velocity_y=0
                         velocity_x=-10
             snake_x += velocity_x
